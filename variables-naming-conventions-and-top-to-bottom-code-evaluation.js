@@ -24,9 +24,23 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
+/*let a = "Alice";
 let b = 5;
 let c = 20;
 let d = a + " bought " + b + " items for $" + c + ".";
 
 console.log(d);
+*/
+
+let customerName = "Alice";
+let numberOfItems = 5;
+let totalCost = 20;
+let taxRate = 1.05; // Adding a tax rate variable to enhance functionality
+let priceperItem = totalCost / numberOfItems; // Adding a variable to calculate price per item
+let receipt =customerName + " bought " + numberOfItems + " items for $" + totalCost + " (including tax: $" + (totalCost * taxRate).toFixed(2) + "). Each item costs $" + priceperItem.toFixed(2) + "."; 
+console.log(receipt);
+
+/*
+Variable names are meaningfukl because it gives context to the data they hold and makes it more readable for other developers to understand.
+The most common pitfalls to avoid when naming variables include using vague names,using reserved keywords. Clear variable names benefit team collaboration by making it easier for team members to understand the code, reducing confusion and improving communication.
+*/
